@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Shop | MixLane</title>
+  <meta name="description" content="MixLane: slushie machines, glass air fryers, kitchen gear and new finds, direct from the factory to Australia.">
+  <meta name="robots" content="noindex">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="xmas-bar" role="note">
+    <span class="xmas-bar-star" aria-hidden="true">✦</span> Merry Christmas from MixLane. <a href="#gifts">Shop the gift guide</a>
+    <span class="xmas-bar-demo">Preview · prices are placeholders</span>
+  </div>
+
+  <header class="nav" id="top">
+    <div class="nav-inner">
+      <a class="brand" href="index.html" aria-label="MixLane, home">Mix<span>Lane</span></a>
+      <nav class="nav-links" aria-label="Main">
+        <a href="#gifts" class="nav-xmas">Christmas gifts</a>
+        <a href="#shop" data-filter="frozen">Frozen treats</a>
+        <a href="#shop" data-filter="fryers">Air fryers</a>
+        <a href="#shop" data-filter="kitchen">Kitchen</a>
+        <a href="#factory">About</a>
+      </nav>
+      <button class="cart-btn" type="button" aria-label="Open cart" data-open-cart>
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 4h2l2.4 11h10.2l2-8H6.2"/><circle cx="9.5" cy="19.5" r="1.2"/><circle cx="17" cy="19.5" r="1.2"/></svg>
+        <span class="cart-count" data-cart-count>0</span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero wrap" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow eyebrow-xmas">Christmas gift pick · Mini Slushie Machine</p>
+        <h1 id="hero-title" class="hero-title">Slushies for a summer Christmas.</h1>
+        <p class="hero-sub">Frozen margaritas on Christmas Day, soft-serve on Boxing Day. One compact machine for slushies, soft-serve, frappés and frozen cocktails, sourced direct from the factory.</p>
+        <div class="hero-cta">
+          <button class="btn btn-dark" type="button" data-quick="slushie-mini">Shop now · <span data-price-of="slushie-mini"></span></button>
+          <a class="link-arrow" href="#shop">Browse all products</a>
+        </div>
+        <ul class="hero-points">
+          <li>1.5 L tank</li>
+          <li>Auto clean</li>
+          <li>SAA certified</li>
+        </ul>
+      </div>
+      <figure class="hero-stage">
+        <img src="assets/products-hd/slushie-mini.jpg" alt="White mini slushie machine with clear tank and touch screen" width="1000" height="1000" fetchpriority="high">
+        <figcaption class="gift-tag" aria-hidden="true">Gift pick</figcaption>
+      </figure>
+    </section>
+
+    <!-- CATEGORIES -->
+    <section class="cats wrap" aria-label="Shop by category">
+      <a class="cat" href="#shop" data-filter="frozen">
+        <img src="assets/products-hd/slushie-win9.jpg" alt="" loading="lazy">
+        <span>Frozen treats</span>
+      </a>
+      <a class="cat" href="#shop" data-filter="fryers">
+        <img src="assets/products-hd/fryer-r35.jpg" alt="" loading="lazy">
+        <span>Air fryers</span>
+      </a>
+      <a class="cat" href="#shop" data-filter="kitchen">
+        <img src="assets/products-hd/sealer.jpg" alt="" loading="lazy">
+        <span>Kitchen</span>
+      </a>
+    </section>
+
+    <!-- CHRISTMAS GIFT GUIDE -->
+    <section class="gifts" id="gifts" aria-labelledby="gifts-title">
+      <div class="wrap">
+        <div class="gifts-head">
+          <p class="eyebrow">Christmas gift guide</p>
+          <h2 id="gifts-title" class="section-title">Merry Christmas.<br>Gifts they'll actually use.</h2>
+        </div>
+        <div class="gift-cols">
+          <button class="gift" type="button" data-quick="slushie-mini">
+            <span class="gift-img"><img src="assets/products-hd/slushie-mini.jpg" alt="" loading="lazy"></span>
+            <span class="gift-for">For the party host</span>
+            <span class="gift-name">Mini Slushie Machine</span>
+          </button>
+          <button class="gift" type="button" data-quick="fryer-r35">
+            <span class="gift-img"><img src="assets/products-hd/fryer-r35.jpg" alt="" loading="lazy"></span>
+            <span class="gift-for">For the home cook</span>
+            <span class="gift-name">Glass Air Fryer, Twin Bowl</span>
+          </button>
+          <button class="gift" type="button" data-quick="blender">
+            <span class="gift-img"><img src="assets/products-hd/blender.jpg" alt="" loading="lazy"></span>
+            <span class="gift-for">Under $100</span>
+            <span class="gift-name">Tumbler Blender</span>
+          </button>
+          <button class="gift" type="button" data-quick="sealer">
+            <span class="gift-img"><img src="assets/products-hd/sealer.jpg" alt="" loading="lazy"></span>
+            <span class="gift-for">Stocking filler</span>
+            <span class="gift-name">Vacuum Food Sealer</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- SHOP -->
+    <section class="shop wrap" id="shop" aria-labelledby="shop-title">
+      <div class="shop-head">
+        <div class="shop-title">
+          <h2 id="shop-title" class="section-title">All products</h2>
+          <p class="shop-count" aria-live="polite"><span data-shop-count>11</span> <span data-shop-count-word>products</span></p>
+        </div>
+        <div class="shop-tools">
+          <div class="filters" role="group" aria-label="Filter products">
+            <button type="button" aria-pressed="true" data-filter-btn="all">All</button>
+            <button type="button" aria-pressed="false" data-filter-btn="frozen">Frozen treats</button>
+            <button type="button" aria-pressed="false" data-filter-btn="fryers">Air fryers</button>
+            <button type="button" aria-pressed="false" data-filter-btn="kitchen">Kitchen</button>
+          </div>
+          <label class="sort"><span>Sort</span>
+            <select data-sort>
+              <option value="featured">Featured</option>
+              <option value="low">Price: low to high</option>
+              <option value="high">Price: high to low</option>
+            </select>
+          </label>
+        </div>
+      </div>
+      <ul class="grid" data-grid></ul>
+    </section>
+
+    <!-- FEATURE: GLASS FRYER -->
+    <section class="feature wrap" aria-labelledby="feature-title">
+      <div class="feature-img">
+        <img src="assets/products-hd/fryer-s35.jpg" alt="Glass air fryer on a cradle stand, full of chips, with a second glass bowl beside it" width="1000" height="1000" loading="lazy">
+      </div>
+      <div class="feature-copy">
+        <p class="eyebrow">Glass air fryers</p>
+        <h2 id="feature-title" class="section-title">See your food cook. No coating to wear off.</h2>
+        <p>Every bowl is glass, so you can watch it crisp and store leftovers in the same bowl. Four models, from a single 7 QT bowl to twin 5 + 3 QT sets.</p>
+        <a class="btn btn-outline" href="#compare">Compare the four models</a>
+      </div>
+    </section>
+
+    <!-- COMPARE: the four glass air fryers side by side (rows are built from products.js) -->
+    <section class="compare wrap" id="compare" aria-labelledby="compare-title">
+      <div class="compare-head">
+        <p class="eyebrow">Side by side</p>
+        <h2 id="compare-title" class="section-title">Which glass air fryer?</h2>
+      </div>
+      <div class="compare-scroll" tabindex="0" role="region" aria-labelledby="compare-title">
+        <table class="compare-table" data-compare></table>
+      </div>
+    </section>
+
+    <!-- TRUST -->
+    <section class="trust wrap" id="factory" aria-label="Why MixLane">
+      <div class="trust-item">
+        <h3>Factory direct</h3>
+        <p>Sourced from the factory in Shunde, Guangdong. No wholesaler in between.</p>
+      </div>
+      <div class="trust-item">
+        <h3>Certified for Australia</h3>
+        <p>Slushie machines carry SAA approval, plus CE, ETL and LFGB marks.</p>
+      </div>
+      <div class="trust-item">
+        <h3>New before retail</h3>
+        <p>Some of the range has not reached Australian shops yet.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer-grid">
+      <div class="footer-brand">
+        <div class="brand">Mix<span>Lane</span></div>
+        <p>Slushie machines, glass air fryers and kitchen finds, direct from the factory to Australia.</p>
+      </div>
+      <nav class="footer-col" aria-label="Shop">
+        <h3>Shop</h3>
+        <a href="#shop" data-filter="all">All products</a>
+        <a href="#shop" data-filter="frozen">Frozen treats</a>
+        <a href="#shop" data-filter="fryers">Air fryers</a>
+        <a href="#shop" data-filter="kitchen">Kitchen</a>
+        <a href="#gifts">Christmas gifts</a>
+      </nav>
+      <div class="footer-col">
+        <h3>Follow</h3>
+        <a href="https://www.instagram.com/mixlane.au/" target="_blank" rel="noopener">Instagram · @mixlane.au</a>
+        <a href="#top">Back to top</a>
+      </div>
+    </div>
+    <div class="wrap footer-legal">
+      <p>Prices in AUD, including GST.</p>
+      <p>Site by Therly Studio</p>
+    </div>
+  </footer>
+
+  <!-- PRODUCT DRAWER -->
+  <div class="scrim" data-scrim hidden></div>
+  <aside class="drawer product-drawer" data-product-drawer aria-hidden="true" aria-labelledby="pd-name" role="dialog" aria-modal="true">
+    <button class="drawer-close" type="button" aria-label="Close" data-close>×</button>
+    <div class="pd-img"><img src="assets/products-hd/slushie-mini.jpg" alt="Mini Slushie Machine" width="1000" height="1000" data-pd-img></div>
+    <div class="pd-body">
+      <p class="pd-model" data-pd-model></p>
+      <h2 id="pd-name" class="pd-name" data-pd-name></h2>
+      <p class="pd-price" data-pd-price></p>
+      <p class="pd-line" data-pd-line></p>
+      <div class="pd-buy">
+        <div class="qty" aria-label="Quantity">
+          <button type="button" data-qty="-1" aria-label="Decrease">−</button>
+          <output data-qty-out>1</output>
+          <button type="button" data-qty="1" aria-label="Increase">+</button>
+        </div>
+        <button class="btn btn-dark btn-block" type="button" data-add>Add to cart</button>
+      </div>
+      <div class="pd-also" data-pd-also></div>
+      <h3 class="pd-specs-title">Specifications</h3>
+      <dl class="pd-specs" data-pd-specs></dl>
+    </div>
+  </aside>
+
+  <!-- CART DRAWER -->
+  <aside class="drawer cart-drawer" data-cart-drawer aria-hidden="true" aria-labelledby="cart-title" role="dialog" aria-modal="true">
+    <button class="drawer-close" type="button" aria-label="Close" data-close>×</button>
+    <h2 id="cart-title" class="cart-title">Cart</h2>
+    <ul class="cart-items" data-cart-items></ul>
+    <p class="cart-empty" data-cart-empty>Your cart is empty.</p>
+    <div class="cart-foot">
+      <div class="cart-row"><span>Subtotal</span><strong data-subtotal>$0</strong></div>
+      <p class="cart-note">Includes GST of <span data-gst>$0</span>. Shipping calculated at checkout.</p>
+      <button class="btn btn-dark btn-block" type="button" data-checkout>Checkout</button>
+      <p class="cart-demo" data-checkout-msg hidden>Preview only. Card, Apple Pay and Google Pay checkout connects at launch.</p>
+    </div>
+  </aside>
+
+  <div class="toast" data-toast role="status" aria-live="polite"></div>
+
+  <script src="products.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
